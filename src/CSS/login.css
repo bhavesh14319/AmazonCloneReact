@@ -8,8 +8,8 @@
 
 
 .login__logo{
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 150px;
+    max-height: 150px;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: auto;
@@ -54,7 +54,25 @@
     margin-top: 15px;
     border-color: #a88743 #9c7e31 #846a29;
     width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0.3rem rgba(165, 131, 7, 0.5);
+  
 }
+
+.login__signInButton:active{
+    /* when the button is pressed it translates 0rem in horizontal direction and 0.3rem in vertical direction  */
+    transform: translate(0, 0.3rem);
+    /* when button is pressed shaddow changes accordingly */
+    box-shadow: 0 0.2rem rgba(255,255,255,0.65);
+  }
+
+
+.login__signInButton:hover{
+    /* brightens the button background on hover */
+    filter: brightness(105%);
+}
+
+
 
 .login__container>span{
     margin-bottom: 5px;

@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "clone-67753"
-  }
+    "default": "clone-67753",
+    "ecommerce": "clone-1ebf4"
+  },
+  "targets": {}
 }

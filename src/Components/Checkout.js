@@ -9,10 +9,10 @@ function Checkout() {
     <div className='checkout'>
         <div className="checkout__left">
             <img className='checkoutad' src="https://images-eu.ssl-images-amazon.com/images/G/31/img22/Sports/April/Home_CB/pc-stripe.jpg" alt="" />
-            <h3>Hello, {user?.email}</h3>  
+            <h3>Hello {user?.email.substring(0,user.email.indexOf('@'))} !</h3>  
             <h2 className="checkout__title">Your Shopping Basket</h2>
             {
-              basket.map((item)=>{
+              basket.map((item,index )=>{
                 return <CheckoutProduct
                         id={item.id}
                         imgsrc={item.imgsrc}
@@ -20,7 +20,7 @@ function Checkout() {
                         price={item.price}
                         rating={item.rating}
                         hideButton
-                />
+                key={index++} />
               })
             }
 

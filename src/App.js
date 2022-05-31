@@ -12,7 +12,10 @@ import Payment from './Components/Payment'
 import {loadStripe} from '@stripe/stripe-js'
 import {Elements} from '@stripe/react-stripe-js'
 import Orders from './Components/Orders'
- const promise = loadStripe('pk_test_51L1BNJSGf8N2MKaAoatdr8jpGKCtjdVDnV1sWKeSSRol38WeXcZsx8R9i5sMI59CIg7smwNA55y0gSLzxBeYVg1f00isq0R4Sl');
+import Prime from './Components/Primes'
+
+
+const promise = loadStripe('pk_test_51L1BNJSGf8N2MKaAoatdr8jpGKCtjdVDnV1sWKeSSRol38WeXcZsx8R9i5sMI59CIg7smwNA55y0gSLzxBeYVg1f00isq0R4Sl');
 
 function App() {
 
@@ -46,6 +49,7 @@ function App() {
     <Router>
       <div className="app">
         <Routes>
+          <Route path="/primes" element={[<Header/>,<Prime/>]}/>
           <Route path="/orders" element={[<Header/>,<Orders/>]}/>
           <Route path='/login' element={<Login/>}></Route>
           <Route path='/Checkout' element={[<Header/>,<Checkout/>]}/>

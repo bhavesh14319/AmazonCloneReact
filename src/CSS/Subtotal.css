@@ -27,5 +27,18 @@
     border: 1px solid;
     margin-top: 10px;
     border-color: #a88734 #9c7e31 #846a29;
-    color:#111
+    color:#111;
+    border-radius: 5px;
+    box-shadow: 0 0.3rem rgba(165, 131, 7, 0.5);
+}
+
+.subtotal>button:active{
+    /* when the button is pressed it translates 0rem in horizontal direction and 0.3rem in vertical direction  */
+    transform: translate(0, 0.3rem);
+    /* when button is pressed shaddow changes accordingly */
+    box-shadow: 0 0.2rem rgba(255,255,255,0.65);
+}
+
+.subtotal>button:hover{
+    filter: brightness(105%);
 }

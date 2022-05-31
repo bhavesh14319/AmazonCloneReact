@@ -4,6 +4,12 @@
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
+    border-radius: 5px;
+}
+
+.checkoutproduct:hover{
+    transform: scale(1.02);
+    box-shadow:0.3rem 0.3rem rgba(0,0,0,0.3) ;
 }
 
 .checkoutproduct__image{
@@ -35,4 +41,18 @@
     margin-top: 15px;
     border-color: #a88743 #9c7e31 #846a29;
     margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0.3rem rgba(165, 131, 7, 0.5);
 }
+
+.checkoutproduct button:active{
+    /* when the button is pressed it translates 0rem in horizontal direction and 0.3rem in vertical direction  */
+    transform: translate(0, 0.3rem);
+    /* when button is pressed shaddow changes accordingly */
+    box-shadow: 0 0.2rem rgba(255,255,255,0.65);
+  }
+  
+
+  .checkoutproduct button:hover{
+    filter: brightness(105%);
+  }

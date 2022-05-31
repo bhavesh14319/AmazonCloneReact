@@ -8,6 +8,7 @@
     font-weight: 400;
     background-color: rgb(234,237,237);
     border-bottom: 1px solid lightgray;
+    margin-top: 5px;
 }
 
 .Payment__container > h1 a{
@@ -46,8 +47,23 @@
     height: 30px;
     font-weight: bolder;
     color: #111;
-
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0.3rem rgba(165, 131, 7, 0.5);
 }
+
+.Payment__details > form  > div > button:active{
+        /* when the button is pressed it translates 0rem in horizontal direction and 0.3rem in vertical direction  */
+        transform: translate(0, 0.3rem);
+        /* when button is pressed shaddow changes accordingly */
+        box-shadow: 0 0.2rem rgba(255,255,255,0.65);
+}
+
+.Payment__details > form  > div > button:hover{
+    filter: brightness(105%);
+}
+
+
 
 
 @media screen and (max-width:500px) {

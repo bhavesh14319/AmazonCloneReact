@@ -32,7 +32,8 @@ function Orders() {
         <h1>Your Orders</h1>
         <div className='Orders__orderContainer'>
             {order?.map(order => {
-                return <Order order={order}/>
+                // console.log(order)
+                return <Order order={order} key={order.id} />
             })}
         </div>
     </div>

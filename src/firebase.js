@@ -7,6 +7,9 @@ import 'firebase/compat/firestore';
 // import { getFirestore } from "https://www.gstatic.com/firebasejs/9.0.2/firebase-firestore.js"
 
    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
   apiKey: "AIzaSyCXZuHo8cWvqwXtyhSDC6FP7qkPuDY2rt4",
   authDomain: "clone-1ebf4.firebaseapp.com",

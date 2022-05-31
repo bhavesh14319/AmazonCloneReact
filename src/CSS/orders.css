@@ -5,3 +5,18 @@
 .Orders > h1{
     margin: 30px 0;
 }
+
+
+@media screen and (max-width:800px){
+    .checkoutproduct{
+        flex-direction: column;
+    }
+
+    .Orders{
+        padding: 10px;
+    }
+
+    img{
+        margin: 0 auto;
+    }
+}

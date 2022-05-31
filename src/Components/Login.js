@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {Link,useNavigate} from 'react-router-dom'
 import '../CSS/login.css'
 import {auth} from "../firebase"
-
+import image from '../images/logo2.jpeg'
 
 function Login() {
 
@@ -44,7 +44,7 @@ function Login() {
   return (
     <div className='login'>
        <Link to='/'>
-          <img className='login__logo' src="https://tse3.mm.bing.net/th?id=OIP.VBlGkAIjAGCABg5E-JlycQHaCS&pid=Api&P=0&w=544&h=168" alt="" />
+          <img className='login__logo' src={image} alt="" />
        </Link> 
 
        <div className="login__container">

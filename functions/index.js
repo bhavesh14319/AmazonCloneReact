@@ -9,24 +9,16 @@ const stripe = require("stripe")(
 
 // - App config
 const app = express();
-// const cors = require('cors');
-const corsOptions ={
-    origin:true, 
-    credentials:true,            //access-control-allow-credentials:true
-    optionSuccessStatus:200
-}
-app.use(cors(corsOptions));
 
 // - Middlewares
-// app.use(cors({ origin: true }));
+app.use(cors({ origin: true }));
 app.use(express.json());
 
 // - API routes
-// app.get("/", (request, response) => response.status(200).send("hello world"));
+app.get("/", (request, response) => response.status(200).send("hello world"));
 
 app.post("/payments/create", async (request, response) => {
-try{
-    const total = request.query.total;
+  const total = request.query.total;
 
   console.log("Payment Request Recieved BOOM!!! for this amount >>> ", total);
 
@@ -39,11 +31,10 @@ try{
   response.status(201).send({
     clientSecret: paymentIntent.client_secret,
   });
-}catch(e){
-    console.log(e);
-}
-  
 });
 
 // - Listen command
 exports.api = functions.https.onRequest(app);
+
+// Example endpoint
+// http://localhost:5001/challenge-4b2b2/us-central1/api
